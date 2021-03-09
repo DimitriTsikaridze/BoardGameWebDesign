@@ -1,0 +1,124 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+body {
+    background-image: url("../Images/registartion_bg_img.JPG");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: transparent;
+}
+
+.registration-txt {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.nav {
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    margin: 15px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+.elem:hover {
+    color: yellow;
+}
+
+h1 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+section {
+    margin-left: 10px;
+    height: 1000px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+input {
+    border: 1px solid;
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-top: 4px;
+    padding: 6px;
+}
+
+button {
+    transition-duration: 1s;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: none;
+    border: 1px solid;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+::placeholder {
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+footer {
+    background: transparent;
+}
+
+ul {
+    display: inline-block;
+}
+
+.footer-li {
+    margin: 20px;
+    font-size: 22px;
+    color: white;
+    display: inline-block;
+}
+
+input::placeholder {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+footer {
+    background: transparent;
+}
+
+ul {
+    display: inline-block;
+}
+
+.footer-li {
+    margin: 20px;
+    font-size: 22px;
+    color: white;
+    display: inline-block;
+}

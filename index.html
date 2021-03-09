@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="Styles/reset.css" />
+        <link rel="stylesheet" href="Styles/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Board Games Corner</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="nav">
+                        <a class="elem" href="index.html">მთავარი</a>
+                    </li>
+                    <li class="nav">
+                        <a class="elem" href="posts.html">მაღაზია</a>
+                    </li>
+                    <li class="nav"><a class="elem" href="#">კონტაქტი</a></li>
+                    <li class="nav">
+                        <a class="elem" href="registration.html">რეგისტრაცია</a>
+                    </li>
+                    <li class="nav">
+                        <a class="elem" href="#">შესვლა</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="title">
+            <h1>Board Games Corner</h1>
+            <h2>სამაგიდო თამაშების დიდი არჩევანი ყველაზე დაბალ ფასად!</h2>
+        </div>
+
+        <div class="buy-button">
+            <button>
+                <a href="posts.html">შეიძინეთ</a>
+            </button>
+        </div>
+
+        <div class="animation">
+            <h3 class="list-title">გუნდის წევრები</h3>
+            <ul id="list"></ul>
+        </div>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li class="footer-li">კონტაქტი 555-555-555</li>
+                </ul>
+                <ul>
+                    <li class="footer-li">
+                        <a
+                            href="https://www.facebook.com/Boardgamescorner"
+                            target="_blank"
+                            >Facebook</a
+                        >
+                    </li>
+                </ul>
+                <ul>
+                    <li class="footer-li">
+                        <a
+                            href="https://www.instagram.com/boardgamescorner/"
+                            target="_blank"
+                            >Instagram</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script>
+            function getUsers() {
+                fetch("https://reqres.in/api/users?page=2", {
+                    method: "GET",
+                })
+                    .then(function (response) {
+                        if (response.status !== 200) {
+                            throw "error";
+                        }
+                        return response.json();
+                    })
+                    .then(function (userList) {
+                        let list = document.getElementById("list");
+                        userList.data.forEach((elem) => {
+                            let li = document.createElement("li");
+                            li.textContent =
+                                elem.first_name + " " + elem.last_name;
+                            list.appendChild(li);
+                        });
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
+            getUsers();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+body {
+    background-image: url("../Images/index_bg_image.JPEG");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.title h1 {
+    color: white;
+    font-size: 70px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+.title h2 {
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+.nav {
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    margin: 15px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+.elem:hover {
+    color: yellow;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    margin-top: 50px;
+    width: 500px;
+    height: 350px;
+}
+
+.buy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+button {
+    transition-duration: 1s;
+    background-color: rgba(201, 198, 32, 0);
+    border-radius: 12px;
+    border: none;
+    padding: 8px;
+    font-size: 35px;
+    color: white;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+button:hover {
+    background: none;
+    border: 1px solid;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    background: transparent;
+}
+
+ul {
+    display: inline-block;
+}
+
+.footer-li {
+    margin: 20px;
+    font-size: 22px;
+    color: white;
+    display: inline-block;
+}
+
+#list {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+.list-title {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+.animation {
+    display: inline-block;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation {
+    0% {
+        background-color: rgb(207, 191, 191);
+    }
+    50% {
+        background-color: transparent;
+        border-radius: 36px;
+    }
+    100% {
+        background-color: rgb(138, 138, 167);
+    }
+}

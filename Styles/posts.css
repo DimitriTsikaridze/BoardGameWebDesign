@@ -1,0 +1,109 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+body {
+    background: url("../Images/posts_bg_image.JPG");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: transparent;
+}
+.nav {
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    margin: 15px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+button {
+    border: 2px white solid;
+    background: transparent;
+    font-size: 24px;
+    padding: 6px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.button-tag {
+    color: white;
+    text-decoration: none;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+h1 {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    padding: 20px;
+}
+
+img {
+    border-radius: 12px;
+    width: 500px;
+    height: 350px;
+}
+
+.flex {
+    text-align: center;
+}
+
+p {
+    width: 500px;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.box {
+    max-width: 500px;
+    display: inline-block;
+    margin: 60px;
+}
+
+.title {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+footer {
+    background: transparent;
+}
+
+ul {
+    display: inline-block;
+}
+
+.footer-li {
+    margin: 20px;
+    font-size: 22px;
+    color: white;
+    display: inline-block;
+}
+
+.footer-li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    .box {
+        display: inline-block;
+        max-width: 200px;
+        max-height: 300px;
+    }
+}

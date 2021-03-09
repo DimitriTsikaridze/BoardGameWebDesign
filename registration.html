@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="Styles/reset.css" />
+        <link rel="stylesheet" href="Styles/registration.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>რეგისტრაცია</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="nav">
+                        <a class="elem" href="index.html">მთავარი</a>
+                    </li>
+                    <li class="nav">
+                        <a class="elem" href="posts.html">მაღაზია</a>
+                    </li>
+                    <li class="nav"><a class="elem" href="#">კონტაქტი</a></li>
+                    <li class="nav">
+                        <a class="elem" href="registration.html">რეგისტრაცია</a>
+                    </li>
+                    <li class="nav">
+                        <a class="elem" href="#">შესვლა</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h2 class="registration-txt">
+            დარეგისტრირდი და მიიღე სამაგიდო თამაშებზე 10%-იანი ფასდაკლება
+        </h2>
+        <section>
+            <form autocomplete="off" id="registration">
+                <div>
+                    <input
+                        type="text"
+                        name="fname"
+                        placeholder="სახელი"
+                        id="fname"
+                    />
+                </div>
+                <div>
+                    <input
+                        type="text"
+                        name="lname"
+                        placeholder="გვარი"
+                        id="lname"
+                    />
+                </div>
+
+                <div>
+                    <input
+                        type="email"
+                        name="mail"
+                        placeholder="ელ ფოსტა"
+                        id="mail"
+                    />
+                </div>
+                <div>
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="პაროლი"
+                        id="password"
+                    />
+                </div>
+                <div>
+                    <input
+                        type="password"
+                        name="password2"
+                        placeholder="გაიმეორეთ პაროლი"
+                        id="password2"
+                    />
+                </div>
+                <div>
+                    <button onclick="validations()">დარეგისტრირება</button>
+                </div>
+                <div>
+                    <button>
+                        <a href="index.html">მთავარ გვერდზე დაბრუნება</a>
+                    </button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <nav>
+                <ul>
+                    <li class="footer-li">კონტაქტი 555-555-555</li>
+                </ul>
+                <ul>
+                    <li class="footer-li">
+                        <a
+                            href="https://www.facebook.com/Boardgamescorner"
+                            target="_blank"
+                            >Facebook</a
+                        >
+                    </li>
+                </ul>
+                <ul>
+                    <li class="footer-li">
+                        <a
+                            href="https://www.instagram.com/boardgamescorner/"
+                            target="_blank"
+                            >Instagram</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script>
+            function validations() {
+                let registration = document.getElementById("registration");
+                registration.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                });
+
+                let username = document.querySelector('[name = "fname"]').value;
+                if (username.length < 3) {
+                    console.log("incorrect format");
+                }
+                let email = document.querySelector('[name = "mail"]').value;
+                let reGex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (reGex.test(email)) {
+                    console.log("incorrect email  format");
+                }
+
+                let password = document.querySelector('[name = "password"]')
+                    .value;
+                let password2 = document.querySelector('[name = "password2"]')
+                    .value;
+                if (password.length < 6) {
+                    console.log("incorrect password format");
+                }
+                if (password !== password2) {
+                    alert("passwords do not match");
+                }
+            }
+        </script>
+    </body>
+</html>
