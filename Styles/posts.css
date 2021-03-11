@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
@@ -100,10 +101,11 @@ ul {
     color: white;
 }
 
-@media screen and (max-width: 375px) {
-    .box {
-        display: inline-block;
-        max-width: 200px;
-        max-height: 300px;
+@media only screen and (max-width: 700px) {
+    img {
+        height: auto;
+        width: auto;
+        max-width: 400px;
+        max-height: 333px;
     }
 }
